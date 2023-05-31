@@ -15,18 +15,17 @@ public class ParkeerGarage {
     public ParkeerGarage(String garageNaam) {
         this.garageNaam = garageNaam;
     }
-    public ParkeerBeurt registreerParkeerBeurt(String nummerplaat){
-        for(Klant klant:klanten){
-            for(Abonnement abonnement:klant.getAbonnementen()){
-                if (nummerplaat == abonnement.getNummerplaat()) {
-                    ParkeerBeurt parkeerBeurt = new ParkeerBeurt();
-                    parkeerBeurt.setInRijMoment();
-                }
-            }
-        }
-
-
-
+    public ArrayList<ParkeerBeurt> registreerParkeerBeurt(String nummerplaat){
+//        TODO
+//        for(Klant klant:klanten){
+//            for(Abonnement abonnement:klant.getAbonnementen()){
+//                if (nummerplaat == abonnement.getNummerplaat()) {
+//                    ParkeerBeurt parkeerBeurt = new ParkeerBeurt();
+//                    parkeerBeurt.setInRijMoment();
+//                }
+//            }
+//        }
+        return parkeerBeurten;
     }
 
     public String getGarageNaam() {

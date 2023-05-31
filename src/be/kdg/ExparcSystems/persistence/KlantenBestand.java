@@ -6,11 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class KlantenBestand {
-    private Map<String, Klant> items = new HashMap<>();
+    private Map<String, Klant> klanten = new HashMap<>();
     public void put(String id,Klant klant) {
-        items.put(id, klant);
+        klanten.put(id, klant);
     }
     public Klant get(String id) {
-        return items.get(id);
+        return klanten.get(id);
     }
 }
