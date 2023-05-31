@@ -13,6 +13,11 @@ public class ParkeerBeurt {
     public ParkeerBeurt() {
 
     }
+    public int berekenTotaal(LocalTime inrijMoment, LocalTime uitRijMoment){
+        //TODO
+        int totaalBedrag = 0;
+        return totaalBedrag;
+    }
 
     public LocalTime getInRijMoment() {
         return inRijMoment;

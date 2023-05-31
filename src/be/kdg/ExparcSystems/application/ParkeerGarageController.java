@@ -19,9 +19,6 @@ public class ParkeerGarageController {
         //TODO
         return false;
     }
-
-
-
     public ParkeerGarageController(KlantenBestand klanten, TevredenheidOnderzoekBestand tevredenheidsOnderzoeken) {
         this.kb = klanten;
         this.tb = tevredenheidsOnderzoeken;
