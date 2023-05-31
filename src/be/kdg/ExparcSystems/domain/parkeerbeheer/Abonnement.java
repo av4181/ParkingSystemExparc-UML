@@ -1,5 +1,7 @@
 package be.kdg.ExparcSystems.domain.parkeerbeheer;
 
+import java.util.ArrayList;
+
 public class Abonnement {
     private Klant klant;
     private String email;
@@ -8,6 +10,7 @@ public class Abonnement {
     private String automerk;
     private String model;
     private TypeMotor motorType;
+    private ArrayList<ParkeerBeurt> parkeerBeurten;
 
     public Abonnement(Klant klant, String email, String gsmnr, String nummerplaat, String automerk, String model, TypeMotor motorType) {
         this.klant = klant;

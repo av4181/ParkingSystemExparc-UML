@@ -9,14 +9,19 @@ public class ParkeerBeurt {
     private String model;
     private TypeMotor motorType;
     private Abonnement abonnee;
+    private ParkeerBewijs parkeerBewijs;
 
-    public ParkeerBeurt() {
-
+    public ParkeerBeurt(LocalTime inRijMoment) {
+        this.inRijMoment=LocalTime.now();
     }
     public int berekenTotaal(LocalTime inrijMoment, LocalTime uitRijMoment){
         //TODO
         int totaalBedrag = 0;
         return totaalBedrag;
+    }
+    public ParkeerBewijs parkeerBewijs(){
+        //TODO
+        return parkeerBewijs;
     }
 
     public LocalTime getInRijMoment() {

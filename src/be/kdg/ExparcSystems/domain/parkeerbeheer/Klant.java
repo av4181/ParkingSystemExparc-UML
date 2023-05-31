@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Klant extends Partij {
     private Boolean registreerToestemming;
-    private int aantalbeurten;
+    private int totaalBeurten;
     private ArrayList<Abonnement> abonnementen;
 
     public Klant() {
@@ -16,8 +16,8 @@ public class Klant extends Partij {
         return registreerToestemming;
     }
 
-    public int getAantalbeurten() {
-        return aantalbeurten;
+    public int getTotaalBeurten() {
+        return totaalBeurten;
     }
 
     public ArrayList<Abonnement> getAbonnementen() {
@@ -28,8 +28,8 @@ public class Klant extends Partij {
         this.registreerToestemming = registreerToestemming;
     }
 
-    public void setAantalbeurten(int aantalbeurten) {
-        this.aantalbeurten = aantalbeurten;
+    public void setTotaalBeurten(int totaalBeurten) {
+        this.totaalBeurten = totaalBeurten;
     }
 
     public void setAbonnementen(ArrayList<Abonnement> abonnementen) {
