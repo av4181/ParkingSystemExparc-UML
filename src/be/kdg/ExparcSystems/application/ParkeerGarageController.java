@@ -7,13 +7,11 @@ import be.kdg.ExparcSystems.domain.parkeerbeheer.ParkeerBewijs;
 import be.kdg.ExparcSystems.persistence.KlantenBestand;
 import be.kdg.ExparcSystems.persistence.TevredenheidOnderzoekBestand;
 
+import java.time.LocalTime;
+
 public class ParkeerGarageController {
     private final KlantenBestand kb;
     private final TevredenheidOnderzoekBestand tb;
-    private ParkeerBeurt parkeerBeurt;
-    private ParkeerBewijs parkeerBewijs;
-    private TevredenheidsOnderzoek tevredenheidsOnderzoek;
-    private Klant klant;
 
     public boolean logIn(String username, String wachtwoord) {
         //TODO
@@ -25,6 +23,8 @@ public class ParkeerGarageController {
     }
     public ParkeerBeurt registreerParkeerbeurt(){
         //TODO
+        LocalTime inRijMoment = LocalTime.now();
+        ParkeerBeurt parkeerBeurt = new ParkeerBeurt(inRijMoment);
         return parkeerBeurt;
     }
     public void betaalParkeerBeurt(ParkeerBewijs parkeerBewijs){
@@ -32,12 +32,10 @@ public class ParkeerGarageController {
     }
     public TevredenheidsOnderzoek registreerTevredenheidsOnderzoek(){
         //TODO
+        TevredenheidsOnderzoek tevredenheidsOnderzoek = new TevredenheidsOnderzoek();
         return tevredenheidsOnderzoek;
     }
-    public Klant registreerKlant(){
-        //TODO
-        return klant;
-    }
+
 
 }
 
