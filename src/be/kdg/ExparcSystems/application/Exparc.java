@@ -21,8 +21,15 @@ public class Exparc {
         return tevredenheidsOnderzoeken;
     }
 
-    ParkeerGarageController initSessie(){
-        return  new ParkeerGarageController(klanten,tevredenheidsOnderzoeken);
+    ParkeerGarageController initParkeerGarageSessie(){
+        return  new ParkeerGarageController(klanten);
+    }
+    KlantRegistratieController initKlantRegistratieSessie(){
+
+        return new KlantRegistratieController(klanten);
+    }
+    TevredenheidsOnderzoekController initTevredenheidsOnderzoekSessie(){
+        return new TevredenheidsOnderzoekController(tevredenheidsOnderzoeken);
     }
 
 }

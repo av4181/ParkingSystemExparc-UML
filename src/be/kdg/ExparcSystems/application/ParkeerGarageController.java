@@ -11,15 +11,14 @@ import java.time.LocalTime;
 
 public class ParkeerGarageController {
     private final KlantenBestand kb;
-    private final TevredenheidOnderzoekBestand tb;
+
 
     public boolean logIn(String username, String wachtwoord) {
         //TODO
         return false;
     }
-    public ParkeerGarageController(KlantenBestand klanten, TevredenheidOnderzoekBestand tevredenheidsOnderzoeken) {
+    public ParkeerGarageController(KlantenBestand klanten) {
         this.kb = klanten;
-        this.tb = tevredenheidsOnderzoeken;
     }
     public ParkeerBeurt registreerParkeerbeurt(){
         //TODO

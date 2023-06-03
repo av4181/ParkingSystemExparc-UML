@@ -10,7 +10,7 @@ public class KlantenBestand {
     public void put(String id,Klant klant) {
         klanten.put(id, klant);
     }
-    public Klant get(String id) {
-        return klanten.get(id);
+    public Klant get(String naam) {
+        return klanten.get(naam);
     }
 }

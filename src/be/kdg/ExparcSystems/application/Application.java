@@ -19,11 +19,19 @@ public class Application {
         // initialisatie alle klanten data en tevredenheidsOnderzoeken
         initData(system);
         // C01  initialisatie van een parkeerBeurt registratie
-        ParkeerGarageController parkeerGarageCtrl = system.initSessie();
+        ParkeerGarageController parkeerGarageCtrl = system.initParkeerGarageSessie();
         // start use case 1
         registrerenParkeerBeurt(parkeerGarageCtrl);
         // start use case 2
         betalenParkeerBeurt(parkeerGarageCtrl);
+        // Initialisatie van een tevredenheidsonderzoek
+        TevredenheidsOnderzoekController tevredenheidsOnderzoekCtrl = system.initTevredenheidsOnderzoekSessie();
+        // start use case 3
+        registrerenTevrdenheidsOnderzoek(tevredenheidsOnderzoekCtrl);
+        // Initialisatie van een klanten registratie
+        KlantRegistratieController klantRegistratieCtrl = system.initKlantRegistratieSessie();
+        // start use case 4
+        registrerenKlant(klantRegistratieCtrl);
 
     }
 
@@ -34,6 +42,14 @@ public class Application {
     }
     private static void betalenParkeerBeurt(ParkeerGarageController parkeerGarageCtrl) {
         // operatiecontract C02-C05 betalen parkeerbeurt
+        //TODO
+    }
+    private static void registrerenTevrdenheidsOnderzoek(TevredenheidsOnderzoekController tevredenheidsOnderzoekCtrl) {
+        // operatiecontract C06-C10 registreren tevredenheidsonderzoek
+        //TODO
+    }
+    private static void registrerenKlant(KlantRegistratieController klantRegistratieCtrl) {
+        // operatiecontract C11 registreren klant
         //TODO
     }
 
